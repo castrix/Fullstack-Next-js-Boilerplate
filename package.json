@@ -19,9 +19,12 @@
     "e2e": "start-server-and-test dev http://localhost:3000 cypress",
     "e2e:headless": "start-server-and-test dev http://localhost:3000 cypress:headless",
     "prepare": "husky install",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "migrate-dev": "prisma migrate dev",
+    "migrate-deploy": "prisma migrate deploy"
   },
   "dependencies": {
+    "@prisma/client": "^4.10.1",
     "next": "^13.1.2",
     "next-seo": "^5.15.0",
     "next-sitemap": "^3.1.45",
@@ -75,6 +78,7 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.21",
     "prettier": "^2.8.3",
+    "prisma": "^4.10.1",
     "rimraf": "^4.1.1",
     "semantic-release": "^19.0.5",
     "start-server-and-test": "^1.15.2",

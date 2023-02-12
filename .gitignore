@@ -46,3 +46,5 @@ local
 
 # vercel
 .vercel
+
+.env
