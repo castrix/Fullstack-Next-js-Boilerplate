@@ -69,6 +69,7 @@ Find more [Nextjs Themes](https://creativedesignsguru.com/category/nextjs/).
 
 - Node.js 14+ and npm
 - Docker & Docker Compose
+- For windows, it's recommended to use wsl2
 
 ### Getting started
 
