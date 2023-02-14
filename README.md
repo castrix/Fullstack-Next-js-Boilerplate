@@ -79,6 +79,12 @@ git clone --depth=1 https://github.com/castrix/Fullstack-Next-js-Boilerplate my-
 cd my-project-name
 ```
 
+Setup your database url for prisma to [connect to database](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/connect-your-database-typescript-postgres):
+
+```
+DATABASE_URL="mysql://root:password@db:3306/mydb" # database username:password and database name is configurable inside docker-compose.yaml
+```
+
 Build Docker image before you can run it
 
 ```shell
