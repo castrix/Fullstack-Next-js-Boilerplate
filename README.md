@@ -77,10 +77,9 @@ Run the following command on your local environment:
 ```shell
 git clone --depth=1 https://github.com/castrix/Fullstack-Next-js-Boilerplate my-project-name
 cd my-project-name
-npm install
 ```
 
-Build Docker image
+Build Docker image before you can run it
 
 ```shell
 make build
