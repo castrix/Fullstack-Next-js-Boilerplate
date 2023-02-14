@@ -35,6 +35,7 @@ Developer experience first:
 - 🖱️ One click deployment with Vercel or Netlify (or manual deployment to any hosting services)
 - 🌈 Include a FREE minimalist theme
 - 💯 Maximize lighthouse score
+- Integrated with database
 
 Built-in feature from Next.js:
 
@@ -67,6 +68,7 @@ Find more [Nextjs Themes](https://creativedesignsguru.com/category/nextjs/).
 ### Requirements
 
 - Node.js 14+ and npm
+- Docker & Docker Compose
 
 ### Getting started
 
@@ -78,10 +80,16 @@ cd my-project-name
 npm install
 ```
 
+Build Docker image
+
+```shell
+make build
+```
+
 Then, you can run locally in development mode with live reload:
 
 ```shell
-npm run dev
+make run
 ```
 
 Open http://localhost:3000 with your favorite browser to see your project.
@@ -101,8 +109,12 @@ Open http://localhost:3000 with your favorite browser to see your project.
 │   ├── styles                      # Styles folder
 │   ├── templates                   # Default template
 │   └── utils                       # Utility functions
+├── prisma                          # Prisma ORM configuration folder database related
+├── Dockerfile                      # Docker configuration file
+├── docker-compose.yaml             # Docker compose configuration file to define the services
 ├── tailwind.config.js              # Tailwind CSS configuration
 └── tsconfig.json                   # TypeScript configuration
+
 ```
 
 ### Customization
